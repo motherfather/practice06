@@ -11,7 +11,8 @@ public class MainApp {
 			stack.push("java");
 			stack.push(".");
 
-			while (!stack.isEmpty()) {
+			
+			while (stack.isEmpty() == false) {
 				System.out.println(stack.pop());
 			}
 
@@ -22,9 +23,9 @@ public class MainApp {
 
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
-			
+
 		} catch (MyStackException ex) {
-			System.out.println( ex );
+			System.out.println(ex);
 		}
 	}
 }
