@@ -31,11 +31,14 @@ public class MyStack implements Stack {
 	@Override
 	public String pop() throws MyStackException {
 		if(top == 0) {
-			throw new MyStackException();
+			MyStackException ex = new MyStackException();
+			throw ex; 
+//			new MyStackException();
 		}
-		String s = stack[top - 1];
-		top--;
-		return s;
+//		String s = stack[top - 1];
+//		top--;
+//		return s;
+		return stack[--top];
 	}
 
 	@Override
