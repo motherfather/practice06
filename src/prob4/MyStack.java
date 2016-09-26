@@ -33,7 +33,7 @@ public class MyStack implements Stack {
 		if(top == 0) {
 			MyStackException ex = new MyStackException();
 			throw ex; 
-//			new MyStackException();
+//			throw new MyStackException();
 		}
 //		String s = stack[top - 1];
 //		top--;
