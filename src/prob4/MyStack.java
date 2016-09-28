@@ -6,7 +6,7 @@ package prob4;
 public class MyStack implements Stack {
 	private int top = 0;
 	String[] stack;
-	StringBuffer sb;
+//	StringBuffer sb;
 
 	public MyStack(int stackNum) {
 		stack = new String[stackNum];
